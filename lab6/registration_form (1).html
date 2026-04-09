@@ -1,0 +1,27 @@
+
+<!DOCTYPE html><html lang='uk'><head><meta charset='UTF-8'><title>Реєстрація</title>
+<style>
+body { font-family: Arial, sans-serif; background:#f4f4f9; padding:20px; }
+h2 { color:#2c3e50; }
+form { background:white; padding:20px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.1); max-width:500px; }
+label { display:block; margin-top:10px; font-weight:bold; }
+input, select, textarea { width:100%; padding:8px; margin-top:5px; border:1px solid #ccc; border-radius:4px; }
+button { margin-top:15px; padding:10px 20px; background:#3498db; border:none; color:white; border-radius:4px; cursor:pointer; }
+button:hover { background:#2980b9; }
+</style>
+</head>
+<body><h2>Реєстрація студента</h2>
+<form action='/register' method='POST'>
+<label for='lastname'>Прізвище:</label><input id='lastname' name='lastname' required><br>
+<label for='firstname'>Ім'я:</label><input id='firstname' name='firstname' required><br>
+<label for='fathername'>По батькові:</label><input id='fathername' name='fathername' required><br>
+<label for='email'>Email:</label><input type='email' id='email' name='email' required><br>
+<label for='pwd'>Пароль:</label><input type='password' id='pwd' name='pwd' minlength='8' required><br>
+<label for='pwd2'>Повтор пароля:</label><input type='password' id='pwd2' name='pwd2' minlength='8' required><br>
+<label for='dob'>Дата народження:</label><input type='date' id='dob' name='dob'><br>
+Стать: <input type='radio' name='gender' value='m'>Чоловіча <input type='radio' name='gender' value='f'>Жіноча<br>
+<label for='faculty'>Факультет:</label><select id='faculty' name='faculty'><option value='kn'>Комп'ютерні науки</option><option value='ipz'>ІПЗ</option></select><br>
+<label for='bio'>Дод. інформація:</label><textarea id='bio' name='bio'></textarea><br>
+<input type='checkbox' id='terms' required> <label for='terms'>Погоджуюсь</label><br>
+<button type='submit'>Зареєструватися</button>
+</form></body></html>

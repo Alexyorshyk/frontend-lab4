@@ -1,0 +1,21 @@
+
+<!DOCTYPE html><html lang='uk'><head><meta charset='UTF-8'><title>Бронювання</title>
+<style>
+body { font-family: Arial, sans-serif; background:#f4f4f9; padding:20px; }
+h2 { color:#2c3e50; }
+form { background:white; padding:20px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.1); max-width:500px; }
+label { display:block; margin-top:10px; font-weight:bold; }
+input, select, textarea { width:100%; padding:8px; margin-top:5px; border:1px solid #ccc; border-radius:4px; }
+button { margin-top:15px; padding:10px 20px; background:#3498db; border:none; color:white; border-radius:4px; cursor:pointer; }
+button:hover { background:#2980b9; }
+</style>
+</head>
+<body><h2>Бронювання готельного номера</h2>
+<form>
+<label>Дата заїзду:</label><input type='date' name='in'><br>
+<label>Дата виїзду:</label><input type='date' name='out'><br>
+<label>Кількість гостей:</label><input type='number' min='1' max='10'><br>
+<label>Тип номера:</label><select><option>Стандарт</option><option>Люкс</option></select><br>
+<input type='checkbox'> Потребує трансферу<br>
+<button type='submit'>Забронювати</button>
+</form></body></html>
